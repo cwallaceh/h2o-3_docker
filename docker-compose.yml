@@ -1,0 +1,9 @@
+version : '3'
+
+services:
+  h2o:
+    image: h2o-3:latest
+    container_name: h2o
+    ports:
+      - 54321:54321
+    command: bash -c "cd /opt &&  java -Xmx1g -jar h2o.jar"
